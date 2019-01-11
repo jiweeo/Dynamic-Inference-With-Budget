@@ -1,16 +1,24 @@
+
+
 ## pretrain ResNet
 ```
 python pretrain_resnet.py --lr 0.01
 ```
 
-## learning the scale
+## Greedy Search
 ```
-python scale_search.py --iter 1
-python scale_training.py --iter 1 --max_epoch 200
-
+python greedy_search.py --iter 1
 ```
 
-## ScaleNet with RL
+## Immitation Learning
+``` 
+python sl_training.py --iter 1 --max_epoch 200
 ```
-python scale_finetuning.py --data imagenet --lr 1e-2 --max_epoch 60
+
+## Joint Finetune
 ```
+python joint_finetune.py 
+```
+
+## website
+[MSCV project](https://mscvprojects.ri.cmu.edu/2018team1/dynamic-layer-pruning-with-computational-budgets/)
